@@ -2,21 +2,32 @@
 
 ## Description
 
-Book Finder is a straightforward app designed to help you discover your next favorite read effortlessly. Enter a book's title, and let the app find the information for you!
+Book Finder is a straight forward app designed to help you discover your next favorite read effortlessly. Enter a book's title, and let the app find the information for you!
 
 ## Features
 
 - **Search Books**: Find books by title.
+- **UX/UI**: For the User Interface and Experience, I've aimed for a cleaner, simple, and user-friendly design, drawing inspiration from Google Search.
+- **Fetch Book Data**: Retrieve book data using the Fetch API from the Open Library Search API.
 - **Display Information**: View detailed information about each book, including title, author, published year, language, edition, publisher, and location.
 
 ## Technologies Used
 
 - **React**: For building the user interface.
+
 - **TypeScript**: To add static type checking to the JavaScript code, improving maintainability and catching errors early.
-- **Jest**: For testing the React components to ensure they work as intended.
+
+- **Lazy-Loading**: lazy loaded Table component, it defers the loading of components until they are actually needed.
+
+- **useCallback**: Implemented useCallback hook to memoize the fetchBooks function and prevent re-creation on every render.
+
+- **Conditional rendering**: I implemented conditional rendering to dynamically display the search results and the table component based on the state.
+
+- **Jest**: For testing the React components to ensure they work as intended, execute the unit tests using the command "npm test".
+
 - **React Testing Library**: To facilitate testing React components with a focus on user interactions.
+
 - **CSS Modules**: For styling the components with scoped CSS, ensuring styles don't leak across components.
-- **Webpack/Vite**: For bundling the application (depending on your setup).
 
 ### Installation
 
