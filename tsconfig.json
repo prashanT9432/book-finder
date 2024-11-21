@@ -3,6 +3,7 @@
     "target": "es6",
     "module": "commonjs",
     "allowImportingTsExtensions": true,
+    "noEmit": true, // or "emitDeclarationOnly": true
     "jsx": "react",
     "strict": true,
     "esModuleInterop": true,
